@@ -1,6 +1,6 @@
 # SecureUxTheme
 
-![License](https://img.shields.io/github/license/namazso/SecureUxTheme) ![Downloads](https://img.shields.io/github/downloads/namazso/SecureUxTheme/total) ![GitHub Version](https://img.shields.io/github/v/release/namazso/SecureUxTheme)
+![License](https://img.shields.io/github/license/namazso/SecureUxTheme) ![Downloads](https://img.shields.io/github/downloads/namazso/SecureUxTheme/total) ![GitHub Version](https://img.shields.io/github/v/release/namazso/SecureUxTheme) ![Scoop Version](https://img.shields.io/scoop/v/secureuxtheme?bucket=extras)
 
 ## About
 
@@ -34,6 +34,12 @@ Styles must still have a format-wise valid signature appended, it is just not ve
 [Latest release](https://github.com/namazso/SecureUxTheme/releases/latest/download/ThemeTool.exe)
 
 [Development builds](https://github.com/namazso/SecureUxTheme/actions)
+
+[Scoop:](https://scoop.sh/)
+```shell
+scoop bucket add extras
+scoop install secureuxtheme
+```
 
 ## Download is MALWARE???
 
