@@ -4,7 +4,7 @@
 
 ## About
 
-SecureUxTheme is a software that removes signature verification of styles from Windows.
+SecureUxTheme is a piece of software that removes signature verification of styles in Windows.
 
 ## Features
 
@@ -21,8 +21,8 @@ Styles must still have a format-wise valid signature appended, it is just not ve
 ## Operating System Support\*
 
 * Windows 8.1
-* Windows 10 (tested: 1507, 1607, 1809, 1903, 1909, 2004, 20H2, 21H1, 21H2, 20348.*)
-* Windows 11 (tested: 21H2)
+* Windows 10
+* Windows 11 (tested: 21H2, 22H2)
 * Future versions\*\*
 
 \* Windows 7 or older will never be supported due to the way themes are implemented.
@@ -40,20 +40,6 @@ Styles must still have a format-wise valid signature appended, it is just not ve
 scoop bucket add extras
 scoop install secureuxtheme
 ```
-
-## Download is MALWARE???
-
-Some silly antiviruses tend to flag the tool as malware, because it's unsigned (this method of detection [clearly](https://www.securityweek.com/use-fake-code-signing-certificates-malware-surges) [works](https://www.zdnet.com/article/hackers-are-selling-legitimate-code-signing-certificates-to-evade-malware-detection/) [btw](http://signedmalware.org/)). I'm submitting all releases before release to Microsoft for analysis if they're detected by Defender, but I can't guarantee the same for all the other AVs. If you have a signing certificate and are willing help signing, please contact me.
-
-### Garbage Antiviruses
-
-Some antiviruses might not detect `ThemeTool.exe` but detect the installed dll (`system32\SecureUxTheme.dll`) and delete it. If this happens your computer will be stuck at the login screen. See the FAQ entry for fixing this, and I'd recommend getting rid of the garbage AV that caused this.
-
-**Because of this, after install you might want to add SecureUxTheme.dll to the exclusions of your antivirus, so it doesn't randomly break your install.**
-
-### But I still don't trust it.
-
-Compile it yourself.
 
 ## LogonUI fix
 
@@ -133,7 +119,7 @@ Naming has been pretty messy in this project, I admit that. Originally this proj
 
 ### Requirements
 
-* Visual Studio 2019 with x86, x64, ARM64 toolchains
+* Visual Studio 2022 (or above) with x86, x64, ARM64 toolchains
 
 ### Compiling
 
@@ -147,22 +133,8 @@ Note that the order of the builds is important, building ThemeTool will fail if 
 
 ### Debugging
 
-lmao
+[not fun](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-winlogon)
 
-## License Statement
+## License
 
-	SecureUxTheme - A secure boot compatible in-memory UxTheme patcher
-	Copyright (C) 2020  namazso
-	
-	This program is free software: you can redistribute it and/or modify
-	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.
-	
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
-	
-	You should have received a copy of the GNU General Public License
-	along with this program.  If not, see <https://www.gnu.org/licenses/>.
+See the [LICENSE](LICENSE) file.
